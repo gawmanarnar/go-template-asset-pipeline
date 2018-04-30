@@ -43,6 +43,7 @@ yarn install --dev
 **Build**
 ```bash
 yarn build (or yarn dev)
+packr build (or go build if you don't want a single binary)
 ```
 **Run**
 ```bash
