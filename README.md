@@ -18,13 +18,13 @@ Features
 - **Go standard library templates**
   - Simple, familiar template language
   - Template function to retrieve hashed filenames from the webpack manifest
+- **Frontend**
+  - Bootstrap 4
+  - JQuery
 - **Chi router**
   - Idiomatic router (can be easily removed if you prefer)
 - **Asset caching middleware**
 - **Builds into single binary with Packr (assets included)**
-- **Frontend**
-  - Bootstrap 4
-  - JQuery
 
 Prerequisites
 --------
