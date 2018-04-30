@@ -44,6 +44,7 @@ yarn install --dev
 ```bash
 yarn build (or yarn dev)
 packr build
+```
 **Run**
 ```bash
 ./go-template-asset-pipeline.exe
