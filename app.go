@@ -1,9 +1,7 @@
 package main
 
 import (
-	"crypto/rand"
 	"encoding/json"
-	"io"
 	"net/http"
 
 	"github.com/gimmeasandwich/go-template-asset-pipeline/views"
@@ -33,7 +31,7 @@ func main() {
 	index = views.NewView("index", templateBox.String("index.gohtml"))
 	r.Get("/", index.Serve)
 
-	http.ListenAndServe(":3000", r)
+	http.ListenAndServe(":3000", CacheAssets(r))
 }
 
 // CreateFileServer - serves our static files
@@ -44,15 +42,4 @@ func CreateFileServer(r chi.Router, path string) {
 	r.Get(path, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		fs.ServeHTTP(w, r)
 	}))
-}
-
-// GenerateRandomKey - generates a random key of the given size
-func GenerateRandomKey(size int) []byte {
-	key := make([]byte, size)
-	_, err := io.ReadFull(rand.Reader, key)
-	if err != nil {
-		return nil
-	}
-
-	return key
 }
