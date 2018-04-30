@@ -36,7 +36,7 @@ Prerequisites
 
 Getting Started
 --------
-All yarn commands can be replaced with npm if you prefer.
+All yarn commands can be replaced with npm if you prefer
 
 **Install dependencies**
 ```bash
