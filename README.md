@@ -23,7 +23,7 @@ Features
 - **Asset caching middleware**
 - **Builds into single binary with Packr (assets included)**
 - **Frontend**
-  - Boostrap 4
+  - Bootstrap 4
   - JQuery
 
 Prerequisites
