@@ -1,0 +1,41 @@
+{
+  "name": "go-template-asset-pipeline",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository":
+    "https://github.com/gimmeasandwich/go-template-asset-pipeline.git",
+  "author": "Tyler <tylerjgaw@gmail.com>",
+  "license": "None",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  },
+  "private": true,
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.2",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "expose-loader": "^0.7.5",
+    "file-loader": "^1.1.11",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "npm-install-webpack-plugin": "^4.0.5",
+    "path": "^0.12.7",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15",
+    "webpack-manifest-plugin": "^2.0.1"
+  },
+  "scripts": {
+    "dev": "webpack --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
+  }
+}
